@@ -1,0 +1,21 @@
+cgit. git CGI interface
+
+cgit lets you control a git reository using URLs 
+
+PREREQUISITE
+- git
+
+INSTALLATION
+1- make a directory for your project
+2- set chmod 777 for the empty directory
+3- make a subdirectory and call it cgit
+4- make sure the cgit directory is in your http server DocumenRoot
+5- "git init" the cgit directory
+6- "git pull git://github.com/slim/cgit.git" in the cgit directory
+7- init your project tree using cgit : go to http://yourServer/cgit/?init
+
+USAGE
+command format is : http://yourServer/cgit/?<command>=<arguments>&<command>=<arguments>&...
+
+where <command> is push, pull, commit, checkout,...
+and <arguments> are arguments to the command
